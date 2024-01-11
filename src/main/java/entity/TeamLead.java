@@ -3,7 +3,7 @@ package entity;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TeamLead{
+public class TeamLead implements Employee{
     private String name;
 
     private String currentProject;
@@ -27,7 +27,7 @@ public class TeamLead{
         return currentProject;
     }
 
-
+    @Override
     public Integer getSalary() {
         return salary;
     }

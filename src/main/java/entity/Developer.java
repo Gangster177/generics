@@ -1,6 +1,6 @@
 package entity;
 
-public class Developer{
+public class Developer implements Employee{
     private String name;
     private Integer salary;
     private String currentProject;
@@ -15,6 +15,7 @@ public class Developer{
         return name;
     }
 
+    @Override
     public Integer getSalary() {
         return salary;
     }
